@@ -55,7 +55,7 @@
 
 #if CFG_TUD_MIDI_FIRST_PORT_STRIDX
 #define EMB_IN_JACK_STRIDX(n) (n+(CFG_TUD_MIDI_FIRST_PORT_STRIDX))
-#define EMB_OUT_JACK_STRIDX(_numcables_in, n) (n+_numcables_in+(CFG_TUD_MIDI_FIRST_PORT_STRIDX))
+#define EMB_OUT_JACK_STRIDX(_numcables_in, n) (n+(CFG_TUD_MIDI_FIRST_PORT_STRIDX))
 #else
 #define EMB_IN_JACK_STRIDX(n) 0
 #define EMB_OUT_JACK_STRIDX(_numcables_in, n) 0
